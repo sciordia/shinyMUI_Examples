@@ -40,13 +40,22 @@ server <- function(input, output, session) {
   
   observeEvent(input$submit_btn, {
     
-    # Extracting label and value from the input
-    selected_label <- input$autocomplete_input[["label"]]
-    selected_value <- input$autocomplete_input[["value"]]
+    # input$autocomplete_input is a named vector, not a list of lists
+    selected_labels <- input$autocomplete_input[names(input$autocomplete_input) == "label"]
+    selected_values <- input$autocomplete_input[names(input$autocomplete_input) == "value"]
     
-    # Printing the extracted values
-    print(paste("Selected label:", selected_label))
-    print(paste("Selected value:", selected_value))
+    # Print the extracted values
+    if (length(selected_labels) > 0) {
+      print(paste("Selected labels:", paste(selected_labels, collapse = ", ")))
+    } else {
+      print("No labels selected")
+    }
+    
+    if (length(selected_values) > 0) {
+      print(paste("Selected values:", paste(selected_values, collapse = ", ")))
+    } else {
+      print("No values selected")
+    }
   })
 }
 
