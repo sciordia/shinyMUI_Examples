@@ -2,7 +2,7 @@
 
 # shinyMUI: Material UI Components for Shiny
 
-`shinyMUI` is an R package that provides Material UI components for use within Shiny applications. This package allows you to create more engaging and visually appealing user interfaces by leveraging the Material Design system.
+shinyMUI is an R package that provides Material UI components for use within Shiny applications. This package allows you to create more engaging and visually appealing user interfaces by leveraging the Material Design system.
 
 ## Installation
 
@@ -94,6 +94,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing.
 
 ## License
 
-`shinyMUI` is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+shinyMUI is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ---
